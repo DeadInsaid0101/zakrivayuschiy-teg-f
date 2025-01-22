@@ -71,7 +71,7 @@
 
 .card_img_sprint_0 {
   filter: sepia(1) brightness(1.2);
-  
+
 }
 
 .card_img_sprint_1_1 {
@@ -91,7 +91,7 @@
 }
 
 .card_img_sprint_3_1 {
-  filter: hue-rotate(180deg) ;
+  filter: hue-rotate(180deg);
 }
 
 .card_img_sprint_3_2 {
@@ -269,8 +269,8 @@
 }
 
 .like-icon.is-liked .heart {
-    animation: heart 0.3s ease-in 0.1s 1;
-    transform-origin: center;
+  animation: heart 0.3s ease-in 0.1s 1;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
