@@ -15,14 +15,14 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: 'wght' var(--main-font-weight, 400);
+  font-variation-settings: "wght" var(--main-font-weight, 400);
   background-attachment: fixed;
   background-image: var(--background-gradient);
 }
 
 .header-container {
   inline-size: var(--header-inline-size);
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy, sans-serif);
   border: 2px solid var(--border-card, rgba(0, 0, 0, 1));
   padding: clamp(120px, 10vw, 128px) clamp(14px, 3vw, 120.5px);
   display: flex;
@@ -52,11 +52,9 @@
   border: 2px solid var(--accent-color);
 }
 
-
-
 .card_tittle {
   font-size: var(--main-font-size);
-  font-variation-settings: 'wght' var(--sub-font-weight);
+  font-variation-settings: "wght" var(--sub-font-weight);
   line-height: 21.78px;
   padding: 5px 10px clamp(3px, 0.5vw, 4px) 10px;
   border-bottom: 2px solid var(--accent-color);
@@ -65,13 +63,11 @@
 .card_img {
   block-size: clamp(371px, 50vw, 696px);
   display: block;
-
   object-fit: cover;
 }
 
 .card_img_sprint_0 {
   filter: sepia(1) brightness(1.2);
-
 }
 
 .card_img_sprint_1_1 {
@@ -104,11 +100,10 @@
 
 .card_img_container {
   position: relative;
-
 }
 
 .card_label {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy, sans-serif);
   font-size: var(--sub-font-size);
   position: absolute;
   top: clamp(23px, 2vw, 25px);
@@ -117,6 +112,7 @@
   text-transform: uppercase;
   font-weight: var(--main-font-weight);
   mix-blend-mode: hard-light;
+  opacity: 50%;
 }
 
 .card_main_section {
@@ -126,11 +122,11 @@
 }
 
 .card_text {
-  margin-bottom: 27px;
+  line-height: 21px;
 }
 
-.card_sub_text {
-  margin-bottom: 25px;
+.card_text:not(:last-of-type) {
+  margin-bottom: 27px;
 }
 
 .button_outline_none:focus {
@@ -142,9 +138,8 @@
   justify-content: end;
   align-items: center;
   gap: 4px;
+  margin-top: 25px;
 }
-
-
 
 .button_card {
   position: relative;
@@ -157,21 +152,19 @@
   justify-content: center;
   padding: 12.5px 37px;
   line-height: 12.6px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy, sans-serif);
   font-size: var(--sub-font-size);
   background-color: white;
   color: var(--accent-color);
-  transition: linear 0.2s;
+  transition: box-shadow 0.3s ease;
 }
 
 .button_change:focus {
   box-shadow: 2px 2px 0 var(--accent-color);
-  transition: linear 0.2s;
 }
 
-
 .button_change::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -179,16 +172,13 @@
   bottom: 0;
   background-color: white;
   transform: translateX(-100%);
-  transition: 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   color: white;
   mix-blend-mode: difference;
-
 }
 
 .button_change:hover::before {
   transform: translateX(0);
-  transition: 0.5s ease-in-out;
-
 }
 
 .button_modal-window {
@@ -202,13 +192,12 @@
   background-color: rgba(255, 255, 255, 1);
   position: relative;
   overflow: hidden;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy, sans-serif);
   font-size: var(--sub-font-size);
 }
 
 .card__icon-button:focus-visible {
   border: 2px solid black;
-  transition: 0.3s ease;
 }
 
 .card__icon-button {
@@ -220,47 +209,47 @@
 
 .like-icon:hover .core {
   fill: var(--core-color-heart-hover);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .core {
   fill: var(--core-color-heart-active);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--core-color-heart-active-is-liked);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .core {
   fill: transparent;
-  transition: fill 0.3s ease 0.03s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon:hover .main-body {
   fill: var(--main-body-color-heart-hover);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .main-body {
   fill: var(--main-body-color-heart-active);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--main-body-color-heart-is-liked);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--contour-color-heart-is-liked);
-  transition: fill 0.3s ease 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .contour {
@@ -269,12 +258,12 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.1s 1;
+  animation: heart 0.3s linear-in 0.1s 1;
   transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s 1 ease-in;
+  animation: sparks 0.3s 0.3s 1 linear;
 }
 
 .container_svg {
@@ -282,8 +271,13 @@
   height: 21px;
 }
 
+.save-modal[open] .container_svg {
+  width: 39px;
+  height: 39px;
+}
+
 .save-modal[open] {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy, sans-serif);
   font-size: var(--sub-font-size);
   inline-size: 357px;
   display: grid;
@@ -322,42 +316,38 @@
   text-transform: uppercase;
 }
 
-
-
-
-
 @media (width <=375px) {
   .button_modal-window {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .container_svg {
-    width: 28px;
-    height: 28px;
+      width: 28px;
+      height: 28px;
+  }
+
+  .save-modal[open] .container_svg {
+      width: 39px;
+      height: 39px;
   }
 
   .button_modal-window {
-    margin-bottom: 100px;
+      margin-bottom: 100px;
   }
 
   .save-modal[open] {
-
-    padding: 30px 42px;
-
+      padding: 30px 42px;
   }
 
   .save_modal_text {
-    inline-size: 198px;
-
+      inline-size: 198px;
   }
-
-
 }
 
-@supports((text-stroke: 1px rgba(255, 255, 255, 1)) or (-webkit-text-stroke: 1px rgba(255, 255, 255, 1))) {
+@supports ((text-stroke: 1px rgba(255, 255, 255, 1)) or (-webkit-text-stroke: 1px rgba(255, 255, 255, 1))) {
   .card_label {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
-    text-stroke: 1px rgba(255, 255, 255, 1);
-    text-shadow: none;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
+      text-stroke: 1px rgba(255, 255, 255, 1);
+      text-shadow: none;
   }
 }

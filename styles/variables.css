@@ -2,7 +2,7 @@
 
 :root {
     --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
+    --accent-font: 'PressStart2P';
     --main-font-weight: 400;
     --sub-font-weight: 700;
     --header-inline-size: clamp(min(100%, 375px), 50vw, 700px);
