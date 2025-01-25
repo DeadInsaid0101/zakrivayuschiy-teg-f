@@ -306,10 +306,12 @@
   grid-column: 1 / -1;
   cursor: pointer;
   inline-size: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .save_modal_text {
-  
   text-transform: uppercase;
 }
 
@@ -335,7 +337,6 @@
   .save-modal[open] {
       padding: 30px 40px;
   }
-
 }
 
 
