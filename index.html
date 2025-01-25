@@ -26,7 +26,7 @@
             <article class="card">
                 <h2 class="card_tittle">Фритрек и нулевой спринт: Подготовка к работе</h2>
                 <div class="card_img_container">
-                    <img src="./images/bird.jpg" class="card_img card_img_sprint_0" alt="птичка" />
+                    <img src="./images/bird.jpg" class="card_img filter-sepia-brightness" alt="птичка" />
                     <span class="card_label">&lt;/html&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -58,7 +58,7 @@
             <article class="card">
                 <h2 class="card_tittle">1 спринт: Я — чистый лист</h2>
                 <div class="card_img_container">
-                    <img src="./images/victoria-wang-eyPfOpIhTXY-unsplash.jpg" class="card_img card_img_sprint_1_1" alt="Внутренний вид на современное архитектурное сооружение." />
+                    <img src="./images/victoria-wang-eyPfOpIhTXY-unsplash.jpg" class="card_img filter-hue-rotate-opacity" alt="Внутренний вид на современное архитектурное сооружение." />
                     <span class="card_label">&lt;/help&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -93,7 +93,7 @@
             <article class="card">
                 <h2 class="card_tittle">1 спринт: А если не получится?</h2>
                 <div class="card_img_container">
-                    <img src="./images/david-dur-M5JJ5n78PqA-unsplash.jpg" class="card_img card_img_sprint_1_2" alt="пальмы" />
+                    <img src="./images/david-dur-M5JJ5n78PqA-unsplash.jpg" class="card_img filter-saturate" alt="пальмы" />
                     <span class="card_label">&lt;/mne_ploho&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -125,7 +125,7 @@
             <article class="card">
                 <h2 class="card_tittle">2 спринт: Погоня за идеалом</h2>
                 <div class="card_img_container">
-                    <img src="./images/ingmar-h-onVfogWm3qw-unsplash.jpg" class="card_img card_img_sprint_2_1" alt="Деревья сквозь занавеску." />
+                    <img src="./images/ingmar-h-onVfogWm3qw-unsplash.jpg" class="card_img filter-invert" alt="Деревья сквозь занавеску." />
                     <span class="card_label">&lt;/sos&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -160,7 +160,7 @@
             <article class="card">
                 <h2 class="card_tittle">2 спринт: О тех, кто рядом</h2>
                 <div class="card_img_container">
-                    <img src="./images/janis-dzenis-TZe3hlM2w-o-unsplash.jpg" class="card_img card_img_sprint_2_2" alt="женщина" />
+                    <img src="./images/janis-dzenis-TZe3hlM2w-o-unsplash.jpg" class="card_img filter-sepia" alt="женщина" />
                     <span class="card_label">&lt;/margin-down&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -195,7 +195,7 @@
             <article class="card">
                 <h2 class="card_tittle">3 спринт: Обходные стратегии</h2>
                 <div class="card_img_container">
-                    <img src="./images/mos-design-RCqzzy9IROw-unsplash.jpg" class="card_img card_img_sprint_3_1" alt="Яркая вывеска японского ресторана с лапшой рамен." />
+                    <img src="./images/mos-design-RCqzzy9IROw-unsplash.jpg" class="card_img filter-hue-rotate" alt="Яркая вывеска японского ресторана с лапшой рамен." />
                     <span class="card_label">&lt;/html&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -227,7 +227,7 @@
             <article class="card">
                 <h2 class="card_tittle">3 спринт: Когда опускаются руки</h2>
                 <div class="card_img_container">
-                    <img src="./images/samir-vanegas-JhqGVkxR1pA-unsplash.jpg" class="card_img card_img_sprint_3_2" alt="мужчина" />
+                    <img src="./images/samir-vanegas-JhqGVkxR1pA-unsplash.jpg" class="card_img filter-grayscale" alt="мужчина" />
                     <span class="card_label">&lt;/hochu_placat&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -262,7 +262,7 @@
             <article class="card">
                 <h2 class="card_tittle">«Сейчас я здесь»</h2>
                 <div class="card_img_container">
-                    <img src="./images/simon-spring-0qiRgT0D-9E-unsplash.jpg" class="card_img card_img_sprint_now" alt="город" />
+                    <img src="./images/simon-spring-0qiRgT0D-9E-unsplash.jpg" class="card_img filter-hue-rotate-contrast-saturate" alt="город" />
                     <span class="card_label">&lt;/html&gt;</span>
                 </div>
                 <div class="card_main_section">
@@ -295,25 +295,23 @@
                 </div>
             </article>
             <button class="button_modal-window button_change button_outline_none" type="button" onclick="window['save-modal'].showModal()" aria-controls="save-modal">
-                <span class="container_svg">
+                <div class="container_svg">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 21" fill="none">
                         <use href="./svg/floppy.svg#disketa" />
                     </svg>
-                </span>
+                </div>
                 Сохранить на память
             </button>
-            <dialog id="save-modal" class="save-modal">
-                <div class="modal_container">
+            <dialog id="save-modal" class="save-modal">          
                     <div class="container_svg">
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 21 21" fill="none">
                             <use href="./svg/floppy.svg#disketa" />
                         </svg>
                     </div>
-                    <p class="save_modal_text">Вставьте дискету, чтобы продолжить</p>
+                    <p class="save_modal_text">Вставьте  дискету, чтобы продолжить</p>
                     <button class="button_save_modal" type="button" onclick="window['save-modal'].close()">
                         ок
-                    </button>
-                </div>
+                    </button>     
             </dialog>
         </main>
         <script src="./scripts/like.js"></script>
